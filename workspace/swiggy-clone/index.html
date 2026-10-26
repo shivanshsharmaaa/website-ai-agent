@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Swiggy</div>
+    <input type="text" id="search" placeholder="Search for restaurants or food">
+    <nav>
+      <ul id="categories">
+        <li data-cat="all" class="active">All</li>
+        <li data-cat="pizza">Pizza</li>
+        <li data-cat="biryani">Biryani</li>
+        <li data-cat="sushi">Sushi</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="restaurant-list" class="grid">
+      <!-- Sample restaurant cards -->
+      <div class="card" data-cat="pizza">
+        <img src="https://via.placeholder.com/300x200" alt="Pizza Place">
+        <h3>Pizza Place</h3>
+        <p>Italian, Fast Food</p>
+      </div>
+      <div class="card" data-cat="biryani">
+        <img src="https://via.placeholder.com/300x200" alt="Biryani House">
+        <h3>Biryani House</h3>
+        <p>Indian, Mughlai</p>
+      </div>
+      <div class="card" data-cat="sushi">
+        <img src="https://via.placeholder.com/300x200" alt="Sushi World">
+        <h3>Sushi World</h3>
+        <p>Japanese, Seafood</p>
+      </div>
+      <div class="card" data-cat="pizza">
+        <img src="https://via.placeholder.com/300x200" alt="Pizza Express">
+        <h3>Pizza Express</h3>
+        <p>Italian, Fast Food</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Basic reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;background:#f5f5f5;}
+header{background:#ff4d4d;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+.logo{font-size:1.5rem;font-weight:bold;}
+#search{padding:8px 12px;border:none;border-radius:4px;width:200px;}
+nav ul{list-style:none;display:flex;gap:15px;}
+nav li{cursor:pointer;padding:5px 10px;border-radius:4px;}
+nav li.active{background:#fff;color:#ff4d4d;}
+main{padding:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,0.1);transition:transform 0.2s;}
+.card:hover{transform:scale(1.02);}
+.card img{width:100%;height:150px;object-fit:cover;}
+.card h3{padding:10px;font-size:1.1rem;}
+.card p{padding:0 10px 10px;color:#555;}
+@media(max-width:600px){#search{width:100%;margin-top:10px;}}
